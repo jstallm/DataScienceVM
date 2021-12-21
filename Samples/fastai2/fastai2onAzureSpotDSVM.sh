@@ -11,7 +11,7 @@ echo
 done
 
 read -p "Azure VM Zone (default: westus2): " vmzoneinput
-vmzone=${vmzoneinput:=westus2}
+vmzone=${vmzoneinput:=westus1}
 
 az group create --name $vmname -l $vmzone
 
